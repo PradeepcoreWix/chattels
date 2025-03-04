@@ -17,21 +17,21 @@
         "announcement-bar-0": {
           "type": "announcement",
           "settings": {
-            "text": "Welcome to our store",
+            "text": "Free shipping on all orders over $40",
             "link": ""
           }
         },
         "announcement_G7iWVP": {
           "type": "announcement",
           "settings": {
-            "text": "Welcome to our store",
+            "text": "Returns extended to 60 days",
             "link": ""
           }
         },
         "announcement_rxrBeT": {
           "type": "announcement",
           "settings": {
-            "text": "Welcome to our store",
+            "text": "Life-time Guarantee",
             "link": ""
           }
         }
@@ -54,12 +54,12 @@
     "header": {
       "type": "header",
       "settings": {
-        "logo_position": "middle-left",
+        "logo_position": "middle-center",
         "mobile_logo_position": "center",
         "menu": "main-menu",
         "menu_type_desktop": "dropdown",
         "sticky_header_type": "on-scroll-up",
-        "show_line_separator": true,
+        "show_line_separator": false,
         "color_scheme": "scheme-1",
         "menu_color_scheme": "",
         "enable_country_selector": true,

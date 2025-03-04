@@ -1,10 +1,9 @@
-# OS generated files #
-######################
-.DS_Store
-.DS_Store?
-._*
-.Spotlight-V100
-.Trashes
-ehthumbs.db
-Thumbs.db
-.shopify
+# Ignore Shopify auto-generated files
+*.css.liquid
+*.css.map
+assets/theme.css
+assets/theme.js
+config/settings_data.json
+.shopify-cli
+.shopify/
+node_modules/

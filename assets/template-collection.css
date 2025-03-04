@@ -63,7 +63,7 @@
   }
 }
 
-.collection__description > * {
+.collection__description>* {
   margin: 0;
 }
 
@@ -96,4 +96,11 @@
 
 .collection__view-all a:not(.link) {
   margin-top: 1rem;
+}
+
+
+.featured-collection .collection__title {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
 }

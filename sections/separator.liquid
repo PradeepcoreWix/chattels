@@ -1,0 +1,34 @@
+<style>
+  .line-separator {
+    display: block !important;
+    background-color: rgba(var(--color-foreground), 0.08);
+    width: 100%;
+    height: 1px;
+  }
+</style>
+
+<div class="page-width side-padding">
+  {% if section.settings.show_separator %}
+    <div class="line-separator"></div>
+  {% endif %}
+</div>
+
+{% schema %}
+{
+  "name": "Separator",
+  "class": "separator",
+  "settings": [
+    {
+      "type": "checkbox",
+      "id": "show_separator",
+      "label": "Show Separator",
+      "default": true
+    }
+  ],
+  "presets": [
+    {
+      "name": "Separator"
+    }
+  ]
+}
+{% endschema %}

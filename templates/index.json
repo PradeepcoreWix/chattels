@@ -12,7 +12,7 @@
     "featured_collection": {
       "type": "featured-collection",
       "settings": {
-        "collection": "all",
+        "collection": "new-arrivals",
         "products_to_show": 8,
         "title": "Featured products",
         "heading_size": "h2",

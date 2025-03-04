@@ -9,6 +9,52 @@
  */
 {
   "sections": {
+    "hero_collage_TDJbBC": {
+      "type": "hero-collage",
+      "blocks": {
+        "image_Kwjpd7": {
+          "type": "image",
+          "settings": {
+            "heading": "Last Chance to Save: Don't Miss Out on Our Flash Sale",
+            "heading_size": "h2",
+            "text": "Fresh sale",
+            "text_style": "caption-with-letter-spacing"
+          }
+        },
+        "image_VAUMDp": {
+          "type": "image",
+          "settings": {
+            "heading": "Discover the Latest Lighting Trends and Styles for Your Home or Office",
+            "heading_size": "h2",
+            "text": "lighting",
+            "text_style": "caption-with-letter-spacing"
+          }
+        },
+        "image_68wFmH": {
+          "type": "image",
+          "settings": {
+            "heading": "Experience the Elegance and Artistry of Our Furniture Collection",
+            "heading_size": "h2",
+            "text": "furniture",
+            "text_style": "caption-with-letter-spacing"
+          }
+        }
+      },
+      "block_order": [
+        "image_Kwjpd7",
+        "image_VAUMDp",
+        "image_68wFmH"
+      ],
+      "settings": {
+        "desktop_layout": "left",
+        "mobile_layout": "column",
+        "desktop_content_position": "bottom-left",
+        "card_styles": "product-card-wrapper",
+        "color_scheme": "",
+        "padding_top": 0,
+        "padding_bottom": 36
+      }
+    },
     "featured_collection": {
       "type": "featured-collection",
       "settings": {
@@ -145,6 +191,7 @@
     }
   },
   "order": [
+    "hero_collage_TDJbBC",
     "featured_collection",
     "collage",
     "video",

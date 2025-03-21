@@ -209,27 +209,30 @@
         "image_ADYJfC": {
           "type": "image",
           "settings": {
-            "heading": "Image banner",
-            "heading_size": "h1",
-            "text": "Give customers details about the banner image(s) or content on the template.",
+            "image": "shopify://shop_images/image-12.jpg",
+            "heading": "Get the Latest products",
+            "heading_size": "h2",
+            "text": "Our new arrivals feature a stunning selection of modern, classic, and contemporary pieces tailored to suit every style and space. Whether you're looking to upgrade your living room, transform your bedroom, or create the perfect dining area, our curated collection offers exceptional quality and unmatched comfort.",
             "text_style": "body"
           }
         },
         "image_XUMbGb": {
           "type": "image",
           "settings": {
-            "heading": "Image banner",
-            "heading_size": "h1",
-            "text": "Give customers details about the banner image(s) or content on the template.",
+            "image": "shopify://shop_images/image-13.jpg",
+            "heading": "The best Living room collection",
+            "heading_size": "h2",
+            "text": "Our collection combines comfort, functionality, and timeless elegance. Each piece is crafted with premium materials to ensure durability and a design that elevates your living space.",
             "text_style": "body"
           }
         },
         "image_k89dBc": {
           "type": "image",
           "settings": {
-            "heading": "Image banner",
-            "heading_size": "h1",
-            "text": "Give customers details about the banner image(s) or content on the template.",
+            "image": "shopify://shop_images/image_06c3e34c-6eeb-44d9-8ac5-d94047b3bc75.jpg",
+            "heading": "Get the Latest woody products",
+            "heading_size": "h2",
+            "text": "Elevate your home with the timeless charm of wood! Explore our Latest Woody Products collection, featuring expertly crafted furniture and décor that blends natural beauty with modern design.",
             "text_style": "body"
           }
         }
@@ -242,7 +245,7 @@
       "settings": {
         "desktop_layout": "left",
         "mobile_layout": "column",
-        "desktop_content_position": "middle-center",
+        "desktop_content_position": "bottom-left",
         "card_styles": "product-card-wrapper",
         "color_scheme": "",
         "padding_top": 20,

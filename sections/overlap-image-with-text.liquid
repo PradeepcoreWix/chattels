@@ -108,7 +108,7 @@
                         {% else %}
                           href="{{ section.settings.button_link }}"
                         {% endif %}
-                        class="button{% if section.settings.button_style_secondary %} button--secondary{% else %} button--primary{% endif %}"
+                        class="{% if section.settings.btn_style == 'link' %}link underlined-link{% elsif section.settings.btn_style == 'solid' %}button{% else %}button button--secondary{% endif %}"
                         {{ section.shopify_attributes }}
                       >
                         {{ section.settings.button_label | escape }}
@@ -322,10 +322,24 @@
       "label": "t:sections.image-with-text.blocks.button.settings.button_link.label"
     },
     {
-      "type": "checkbox",
-      "id": "button_style_secondary",
-      "default": false,
-      "label": "t:sections.image-with-text.blocks.button.settings.outline_button.label"
+      "type": "select",
+      "id": "btn_style",
+      "label": "Button style",
+      "options": [
+        {
+          "value": "link",
+          "label": "t:sections.featured-collection.settings.view_all_style.options__1.label"
+        },
+        {
+          "value": "outline",
+          "label": "t:sections.featured-collection.settings.view_all_style.options__2.label"
+        },
+        {
+          "value": "solid",
+          "label": "t:sections.featured-collection.settings.view_all_style.options__3.label"
+        }
+      ],
+      "default": "solid"
     },
     {
       "type": "select",

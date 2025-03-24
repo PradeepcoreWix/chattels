@@ -83,13 +83,6 @@
                   {%- endif -%}
                 </div>
                 <div class="banner__content collage-banner__content--{{ section.settings.desktop_content_position }}">
-                  <div class="banner-text-block">
-                    {% if block.settings.text != blank %}
-                      <div class="banner__text rte {{ block.settings.text_style }}" {{ block.shopify_attributes }}>
-                        <p>{{ block.settings.text }}</p>
-                      </div>
-                    {% endif %}
-                  </div>
                   <div class="banner-heading-block">
                     {% if block.settings.heading != blank %}
                       <h2
@@ -99,6 +92,28 @@
                         {{ block.settings.heading }}
                       </h2>
                     {% endif %}
+                  </div>
+                  <div class="banner-text-block">
+                    {% if block.settings.text != blank %}
+                      <div class="banner__text rte {{ block.settings.text_style }}" {{ block.shopify_attributes }}>
+                        <p>{{ block.settings.text }}</p>
+                      </div>
+                    {% endif %}
+                  </div>
+                  <div class="btn-wrapper">
+                    {%- if section.settings.button_label != blank -%}
+                      <a
+                        {% if section.settings.button_link == blank %}
+                          role="link" aria-disabled="true"
+                        {% else %}
+                          href="{{ section.settings.button_link }}"
+                        {% endif %}
+                        class="button{% if section.settings.button_style_secondary %} button--secondary{% else %} button--primary{% endif %}"
+                        {{ section.shopify_attributes }}
+                      >
+                        {{ section.settings.button_label | escape }}
+                      </a>
+                    {%- endif -%}
                   </div>
                 </div>
               </div>
@@ -293,6 +308,24 @@
       ],
       "default": "middle-center",
       "label": "t:sections.image-banner.settings.desktop_content_position.label"
+    },
+    {
+      "type": "text",
+      "id": "button_label",
+      "default": "t:sections.image-with-text.blocks.button.settings.button_label.default",
+      "label": "t:sections.image-with-text.blocks.button.settings.button_label.label",
+      "info": "t:sections.image-with-text.blocks.button.settings.button_label.info"
+    },
+    {
+      "type": "url",
+      "id": "button_link",
+      "label": "t:sections.image-with-text.blocks.button.settings.button_link.label"
+    },
+    {
+      "type": "checkbox",
+      "id": "button_style_secondary",
+      "default": false,
+      "label": "t:sections.image-with-text.blocks.button.settings.outline_button.label"
     },
     {
       "type": "select",

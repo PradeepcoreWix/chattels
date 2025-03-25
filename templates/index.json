@@ -248,11 +248,75 @@
         "desktop_content_position": "bottom-left",
         "button_label": "Button label",
         "button_link": "#",
-        "button_style_secondary": false,
+        "btn_style": "link",
         "card_styles": "product-card-wrapper",
         "color_scheme": "",
         "padding_top": 20,
         "padding_bottom": 20
+      }
+    },
+    "featured_collection_Rz6wAb": {
+      "type": "featured-collection",
+      "settings": {
+        "collection": "woody",
+        "products_to_show": 4,
+        "title": "Featured Items",
+        "heading_size": "h2",
+        "description": "",
+        "show_description": false,
+        "description_style": "body",
+        "columns_desktop": 4,
+        "enable_desktop_slider": false,
+        "full_width": false,
+        "show_view_all": true,
+        "view_all_style": "link",
+        "color_scheme": "",
+        "image_ratio": "adapt",
+        "image_shape": "default",
+        "show_secondary_image": false,
+        "show_vendor": false,
+        "show_rating": false,
+        "quick_add": "none",
+        "columns_mobile": "2",
+        "swipe_on_mobile": false,
+        "padding_top": 36,
+        "padding_bottom": 36
+      }
+    },
+    "collection_column_list_p3nYmK": {
+      "type": "collection-column-list",
+      "blocks": {
+        "collection_myN7LH": {
+          "type": "collection",
+          "settings": {
+            "collection": "decor"
+          }
+        },
+        "collection_hHpby6": {
+          "type": "collection",
+          "settings": {
+            "collection": "lighting"
+          }
+        },
+        "collection_88LN7C": {
+          "type": "collection",
+          "settings": {
+            "collection": "seating"
+          }
+        }
+      },
+      "block_order": [
+        "collection_myN7LH",
+        "collection_hHpby6",
+        "collection_88LN7C"
+      ],
+      "settings": {
+        "heading": "Featured Collections",
+        "heading_size": "h1",
+        "color_scheme": "",
+        "columns": 3,
+        "padding_top": 36,
+        "padding_bottom": 36
       }
     }
   },
@@ -261,6 +325,8 @@
     "multicolumn_GweVwn",
     "separator_pr4w63",
     "featured_collection",
-    "overlap_image_with_text_zcPHi6"
+    "overlap_image_with_text_zcPHi6",
+    "featured_collection_Rz6wAb",
+    "collection_column_list_p3nYmK"
   ]
 }

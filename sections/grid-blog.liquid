@@ -1,0 +1,226 @@
+{{ 'component-article-card.css' | asset_url | stylesheet_tag }}
+
+{%- style -%}
+  .custom-blog-section {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+  }
+  .custom-blog-container {
+    width: 100%;
+  }
+  .custom-blog-title {
+    font-size: 24px;
+    font-weight: bold;
+    margin-bottom: 20px;
+  }
+  .custom-blog-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 30px;
+  }
+  .custom-blog-card {
+    display: flex;
+    gap: 15px;
+    align-items: center;
+  }
+  .custom-blog-card img {
+    width: 200px;
+    height: 200px;
+    object-fit: cover;
+    border-radius: 5px;
+  }
+  .custom-blog-card-content {
+    max-width: 400px;
+  }
+  .custom-blog-card-title {
+    font-size: 18px;
+    font-weight: bold;
+    margin-bottom: 5px;
+  }
+  .custom-blog-meta {
+    font-size: 14px;
+    color: gray;
+    margin-bottom: 10px;
+  }
+  .custom-blog-read-more {
+    font-size: 14px;
+    text-decoration: underline;
+    cursor: pointer;
+  }
+  .blog__title {
+    margin: 0;
+  }
+  @media (max-width: 768px) {
+    .custom-blog-grid {
+      grid-template-columns: 1fr;
+    }
+    .custom-blog-card {
+      flex-direction: column;
+      text-align: center;
+    }
+    .custom-blog-card img {
+      width: 100%;
+      height: auto;
+    }
+  }
+  .section-{{ section.id }}-padding {
+    padding-top: {{ section.settings.padding_top | times: 0.75 | round: 0 }}px;
+    padding-bottom: {{ section.settings.padding_bottom | times: 0.75 | round: 0 }}px;
+  }
+
+  @media screen and (min-width: 750px) {
+    .section-{{ section.id }}-padding {
+      padding-top: {{ section.settings.padding_top }}px;
+      padding-bottom: {{ section.settings.padding_bottom }}px;
+    }
+  }
+{%- endstyle -%}
+
+<div class="custom-blog-container page-width side-padding section-{{ section.id }}-padding">
+  {%- unless section.settings.heading == blank -%}
+    <div class="title-wrapper-with-link{% if posts_displayed > 2 %} title-wrapper--self-padded-tablet-down{% else %} title-wrapper--self-padded-mobile{% endif %} title-wrapper--no-top-margin">
+      <h2
+        id="SectionHeading-{{ section.id }}"
+        class="blog__title inline-richtext {{ section.settings.heading_size }}{% if settings.animations_reveal_on_scroll %} scroll-trigger animate--slide-in{% endif %}"
+        {% if settings.animations_reveal_on_scroll %}
+          data-cascade
+        {% endif %}
+      >
+        {{ section.settings.heading }}
+      </h2>
+
+      {%- if section.settings.blog != blank
+        and section.settings.show_view_all
+        and section.settings.post_limit < section.settings.blog.articles_count
+      -%}
+        <a
+          href="{{ section.settings.blog.url }}"
+          class="link underlined-link large-up-hide{% if settings.animations_reveal_on_scroll %} scroll-trigger animate--slide-in{% endif %}"
+        >
+          {{ 'sections.featured_blog.view_all' | t }}
+        </a>
+      {%- endif -%}
+    </div>
+  {%- endunless -%}
+
+  <div class="custom-blog-grid">
+    {%- for article in blogs[section.settings.blog].articles limit: section.settings.article_limit -%}
+      <div class="custom-blog-card">
+        <a href="{{ article.url }}">
+          <img src="{{ article.image | image_url: width: 400 }}" alt="{{ article.title }}" width="" height="">
+        </a>
+        <div class="custom-blog-card-content">
+          <a href="{{ article.url }}" class="custom-blog-card-title">{{ article.title }}</a>
+          <p class="custom-blog-meta">
+            {{ article.tags.first }} | {{ article.published_at | date: '%d/%m/%Y' }} | {{ article.author }}
+          </p>
+          <a href="{{ article.url }}" class="custom-blog-read-more">READ MORE</a>
+        </div>
+      </div>
+    {%- endfor -%}
+  </div>
+</div>
+
+{% schema %}
+{
+  "name": "Custom Blog",
+  "tag": "section",
+  "settings": [
+    {
+      "type": "blog",
+      "id": "blog",
+      "label": "Select Blog"
+    },
+    {
+      "type": "header",
+      "content": "t:sections.featured-blog.settings.text_header.content"
+    },
+    {
+      "type": "inline_richtext",
+      "id": "heading",
+      "default": "t:sections.featured-blog.settings.heading.default",
+      "label": "t:sections.featured-blog.settings.heading.label"
+    },
+    {
+      "type": "select",
+      "id": "heading_size",
+      "options": [
+        {
+          "value": "h2",
+          "label": "t:sections.all.heading_size.options__1.label"
+        },
+        {
+          "value": "h1",
+          "label": "t:sections.all.heading_size.options__2.label"
+        },
+        {
+          "value": "h0",
+          "label": "t:sections.all.heading_size.options__3.label"
+        },
+        {
+          "value": "hxl",
+          "label": "t:sections.all.heading_size.options__4.label"
+        },
+        {
+          "value": "hxxl",
+          "label": "t:sections.all.heading_size.options__5.label"
+        }
+      ],
+      "default": "h2",
+      "label": "t:sections.all.heading_size.label"
+    },
+    {
+      "type": "checkbox",
+      "id": "show_view_all",
+      "default": true,
+      "label": "Show View All Button"
+    },
+    {
+      "type": "text",
+      "id": "section_title",
+      "label": "Section Title",
+      "default": "Journal"
+    },
+    {
+      "type": "range",
+      "id": "article_limit",
+      "label": "Number of Articles",
+      "min": 2,
+      "max": 6,
+      "step": 1,
+      "default": 6
+    },
+    {
+      "type": "header",
+      "content": "t:sections.all.padding.section_padding_heading"
+    },
+    {
+      "type": "range",
+      "id": "padding_top",
+      "min": 0,
+      "max": 100,
+      "step": 4,
+      "unit": "px",
+      "label": "t:sections.all.padding.padding_top",
+      "default": 20
+    },
+    {
+      "type": "range",
+      "id": "padding_bottom",
+      "min": 0,
+      "max": 100,
+      "step": 4,
+      "unit": "px",
+      "label": "t:sections.all.padding.padding_bottom",
+      "default": 20
+    }
+  ],
+  "presets": [
+    {
+      "name": "Custom Blog",
+      "category": "Blog"
+    }
+  ]
+}
+{% endschema %}

@@ -1,0 +1,72 @@
+{{ 'section-newsletter.css' | asset_url | stylesheet_tag }}
+
+<div
+  class="newsletter-section section-{{ section.id }}"
+  style="background-image: url('{{ section.settings.background_image | image_url }}');"
+>
+  <div class="newsletter-container">
+    {%- if section.settings.subtitle != blank -%}
+      <p class="newsletter-subtitle">{{ section.settings.subtitle }}</p>
+    {%- endif -%}
+
+    {%- if section.settings.rich_text != blank -%}
+      <div class="newsletter-text">{{ section.settings.rich_text }}</div>
+    {%- endif -%}
+
+    <div class="newsletter-form">
+      {% form 'customer', id: 'contact_form' %}
+        <div class="newsletter-wrapper">
+          <input
+            type="email"
+            name="contact[email]"
+            class="newsletter-input"
+            placeholder="Your Email"
+            required
+          >
+          <button type="submit" class="newsletter-button">
+            {{ section.settings.button_text }}
+          </button>
+        </div>
+      {% endform %}
+    </div>
+  </div>
+</div>
+
+{% schema %}
+{
+  "name": "Custom Newsletter",
+  "tag": "section",
+  "class": "newsletter-sec",
+  "settings": [
+    {
+      "type": "image_picker",
+      "id": "background_image",
+      "label": "Background Image"
+    },
+    {
+      "type": "text",
+      "id": "subtitle",
+      "label": "Subtitle",
+      "default": "Subscribe to our Newsletter"
+    },
+    {
+      "type": "richtext",
+      "id": "rich_text",
+      "label": "Rich Text",
+      "default": "<p>Subscribe to our Newsletter & get 25% off your first order.</p>"
+    },
+    {
+      "type": "text",
+      "id": "button_text",
+      "label": "Button Text",
+      "default": "Subscribe"
+    }
+  ],
+  "presets": [
+    {
+      "name": "Custom Newsletter",
+      "category": "Marketing"
+    }
+  ]
+}
+{% endschema %}

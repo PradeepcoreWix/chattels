@@ -330,6 +330,15 @@
         "padding_top": 20,
         "padding_bottom": 20
       }
+    },
+    "newsletter_with_text_nVMtAj": {
+      "type": "newsletter-with-text",
+      "settings": {
+        "background_image": "shopify://shop_images/image_06c3e34c-6eeb-44d9-8ac5-d94047b3bc75.jpg",
+        "subtitle": "Subscribe to our Newsletter",
+        "rich_text": "<p>Subscribe to our Newsletter & get 25% off your first order.</p>",
+        "button_text": "Subscribe"
+      }
     }
   },
   "order": [
@@ -340,6 +349,7 @@
     "overlap_image_with_text_zcPHi6",
     "featured_collection_Rz6wAb",
     "collection_column_list_p3nYmK",
-    "grid_blog_gMak6p"
+    "grid_blog_gMak6p",
+    "newsletter_with_text_nVMtAj"
   ]
 }

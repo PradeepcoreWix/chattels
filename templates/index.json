@@ -279,8 +279,8 @@
         "quick_add": "none",
         "columns_mobile": "2",
         "swipe_on_mobile": false,
-        "padding_top": 36,
-        "padding_bottom": 36
+        "padding_top": 20,
+        "padding_bottom": 20
       }
     },
     "collection_column_list_p3nYmK": {
@@ -312,11 +312,10 @@
       ],
       "settings": {
         "heading": "Featured Collections",
-        "heading_size": "h1",
+        "heading_size": "h2",
         "color_scheme": "",
-        "columns": 3,
-        "padding_top": 36,
-        "padding_bottom": 36
+        "padding_top": 20,
+        "padding_bottom": 20
       }
     }
   },

@@ -317,6 +317,19 @@
         "padding_top": 20,
         "padding_bottom": 20
       }
+    },
+    "grid_blog_gMak6p": {
+      "type": "grid-blog",
+      "settings": {
+        "blog": "my-blogs",
+        "heading": "Blog posts",
+        "heading_size": "h2",
+        "show_view_all": true,
+        "section_title": "Journal",
+        "article_limit": 6,
+        "padding_top": 20,
+        "padding_bottom": 20
+      }
     }
   },
   "order": [
@@ -326,6 +339,7 @@
     "featured_collection",
     "overlap_image_with_text_zcPHi6",
     "featured_collection_Rz6wAb",
-    "collection_column_list_p3nYmK"
+    "collection_column_list_p3nYmK",
+    "grid_blog_gMak6p"
   ]
 }

@@ -17,8 +17,8 @@
         "text_iQ6w4g": {
           "type": "text",
           "settings": {
-            "heading": "Heading",
-            "subtext": "<p>Share contact information, store details, and brand content with your customers.</p>",
+            "heading": "",
+            "subtext": "<p>This home decor demo is designed to showcase elegant and minimalistic interior pieces. Featuring sleek layouts and high-quality visuals, it provides a refined shopping experience where customers can explore beautifully curated collections.</p>",
             "show_social": true
           }
         },

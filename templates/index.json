@@ -280,7 +280,7 @@
         "columns_mobile": "2",
         "swipe_on_mobile": false,
         "padding_top": 20,
-        "padding_bottom": 20
+        "padding_bottom": 12
       }
     },
     "collection_column_list_p3nYmK": {
@@ -327,8 +327,8 @@
         "show_view_all": true,
         "section_title": "Journal",
         "article_limit": 6,
-        "padding_top": 20,
-        "padding_bottom": 60
+        "padding_top": 12,
+        "padding_bottom": 56
       }
     },
     "newsletter_with_text_nVMtAj": {

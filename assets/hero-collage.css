@@ -42,6 +42,11 @@
     gap: 8px;
 }
 
+.hero-collage .collage {
+    grid-column-gap: 3px;
+    grid-row-gap: 3px;
+}
+
 .hero-collage .banner__content .banner__heading {
     margin: 0;
 }

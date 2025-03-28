@@ -21,27 +21,35 @@
   }
   .custom-blog-card {
     display: flex;
-    gap: 15px;
+    gap: 20px;
     align-items: center;
   }
   .custom-blog-card img {
-    width: 200px;
-    height: 200px;
+    width: 300px;
+    height: 300px;
     object-fit: cover;
-    border-radius: 5px;
   }
   .custom-blog-card-content {
     max-width: 400px;
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+    height: 100%;
+    justify-content: space-between;
+    padding: 5px;
   }
   .custom-blog-card-title {
     font-size: 18px;
-    font-weight: bold;
+    font-weight: 400;
     margin-bottom: 5px;
+    color: #000;
+    text-decoration: none;
+    line-height: 22px;
   }
   .custom-blog-meta {
-    font-size: 14px;
-    color: gray;
-    margin-bottom: 10px;
+    font-size: 12px;
+    color: #989898;
+    margin: 5px 0;
   }
   .custom-blog-read-more {
     font-size: 14px;
@@ -50,6 +58,30 @@
   }
   .blog__title {
     margin: 0;
+  }
+  .custom-blog-meta span {
+      padding: 0 2px;
+  }
+  .custom-blog-meta span:first-child {
+      padding-left: 0;
+  }
+  .custom-blog-meta span:empty {
+      display: none;
+  }
+  .custom-blog-card-title:hover {
+    text-decoration: underline;
+    text-underline-offset: 0.3rem;
+  }
+  @media (max-width: 1580px) {
+    .custom-blog-grid {
+      grid-template-columns: repeat(2, 1fr);
+    }
+  }
+  @media (min-width: 750px) and (max-width: 1199px) {
+    .custom-blog-card img {
+      width: 180px;
+      height: 180px;
+    }
   }
   @media (max-width: 768px) {
     .custom-blog-grid {
@@ -111,11 +143,17 @@
           <img src="{{ article.image | image_url: width: 400 }}" alt="{{ article.title }}" width="" height="">
         </a>
         <div class="custom-blog-card-content">
-          <a href="{{ article.url }}" class="custom-blog-card-title">{{ article.title }}</a>
-          <p class="custom-blog-meta">
-            {{ article.tags.first }} | {{ article.published_at | date: '%d/%m/%Y' }} | {{ article.author }}
-          </p>
-          <a href="{{ article.url }}" class="custom-blog-read-more">READ MORE</a>
+          <div class="custom-blog-title-wrapper">
+            <a href="{{ article.url }}" class="custom-blog-card-title">{{ article.title }}</a>
+            <p class="custom-blog-meta">
+              <span class="article-tag">{{ article.tags.first }}</span>
+              <span class="article-published-date">{{ article.published_at | date: '%d/%m/%Y' }}</span>
+              <span class="article-author">{{ article.author }}</span>
+            </p>
+          </div>
+          <div class="btn-wrapper">
+            <a href="{{ article.url }}" class="link underlined-link">Read More</a>
+          </div>
         </div>
       </div>
     {%- endfor -%}

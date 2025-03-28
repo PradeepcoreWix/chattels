@@ -14,37 +14,45 @@
     "footer": {
       "type": "footer",
       "blocks": {
-        "footer-0": {
+        "text_iQ6w4g": {
+          "type": "text",
+          "settings": {
+            "heading": "Heading",
+            "subtext": "<p>Share contact information, store details, and brand content with your customers.</p>",
+            "show_social": true
+          }
+        },
+        "link_list_AayVUN": {
           "type": "link_list",
           "settings": {
             "heading": "Quick links",
             "menu": "footer"
           }
         },
-        "footer-1": {
+        "link_list_LQTdWU": {
           "type": "link_list",
           "settings": {
-            "heading": "Info",
+            "heading": "Quick links",
             "menu": "footer"
           }
         },
-        "footer-2": {
-          "type": "text",
+        "link_list_aMAWF7": {
+          "type": "link_list",
           "settings": {
-            "heading": "Our mission",
-            "subtext": "<p>Share contact information, store details, and brand content with your customers.<\/p>"
+            "heading": "Quick links",
+            "menu": "footer"
           }
         }
       },
       "block_order": [
-        "footer-0",
-        "footer-1",
-        "footer-2"
+        "text_iQ6w4g",
+        "link_list_AayVUN",
+        "link_list_LQTdWU",
+        "link_list_aMAWF7"
       ],
       "settings": {
         "color_scheme": "scheme-1",
-        "newsletter_enable": true,
-        "newsletter_heading": "Subscribe to our emails",
+        "enable_follow_on_shop": true,
         "show_social": true,
         "enable_country_selector": false,
         "enable_language_selector": false,

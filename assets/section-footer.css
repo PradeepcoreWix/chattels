@@ -42,7 +42,7 @@
 
 .footer__content-bottom {
   border-top: solid 0.1rem rgba(var(--color-foreground), 0.08);
-  padding-top: 3rem;
+  padding-top: 2rem;
 }
 
 .footer__content-bottom:only-child {
@@ -456,7 +456,7 @@
 }
 
 .copyright__content {
-  font-size: 1.1rem;
+  font-size: 1.3rem;
 }
 
 .copyright__content a {
@@ -482,6 +482,13 @@
 .policies li a {
   padding: 0.6rem 0;
   display: block;
+}
+
+.footer-block__heading {
+  font-family: var(--font-body-family);
+  text-transform: uppercase;
+  font-size: 14px;
+  color: #989898;
 }
 
 @media screen and (min-width: 750px) {

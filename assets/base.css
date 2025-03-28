@@ -921,6 +921,17 @@ summary::-webkit-details-marker {
   row-gap: var(--grid-mobile-vertical-spacing);
 }
 
+input:-webkit-autofill,
+input:-webkit-autofill:hover,
+input:-webkit-autofill:focus,
+input:-webkit-autofill:active {
+  -webkit-box-shadow: 0 0 0 0 transparent inset !important;
+}
+
+input:-internal-autofill-selected {
+  background-color: light-dark(rgba(255, 255, 255, 0), rgba(70, 90, 126, 0.4)) !important;
+}
+
 @media screen and (min-width: 750px) {
   .grid {
     column-gap: var(--grid-desktop-horizontal-spacing);

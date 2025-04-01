@@ -216,12 +216,22 @@
       "settings": {
         "show_separator": true
       }
+    },
+    "newsletter_with_text_BKD396": {
+      "type": "newsletter-with-text",
+      "settings": {
+        "background_image": "shopify://shop_images/image_06c3e34c-6eeb-44d9-8ac5-d94047b3bc75.jpg",
+        "subtitle": "Subscribe to our Newsletter",
+        "rich_text": "<p>Subscribe to our Newsletter & get 25% off your first order.</p>",
+        "button_text": "Subscribe"
+      }
     }
   },
   "order": [
     "main",
     "related-products",
     "multicolumn",
-    "separator_6rT6AD"
+    "separator_6rT6AD",
+    "newsletter_with_text_BKD396"
   ]
 }

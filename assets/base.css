@@ -127,7 +127,7 @@ body:has(.section-header .drawer-menu) .announcement-bar-section .page-width {
 
 @media screen and (min-width: 750px) {
   .page-width {
-    padding: 0 5rem;
+    padding: 0 40px;
   }
 
   .side-padding {
@@ -150,7 +150,7 @@ body:has(.section-header .drawer-menu) .announcement-bar-section .page-width {
   }
 
   .page-width-tablet {
-    padding: 0 5rem;
+    padding: 0 40px;
   }
 }
 
@@ -2263,8 +2263,8 @@ input[type='checkbox'] {
 
 @media screen and (min-width: 990px) {
   body:has(.section-header .header:not(.drawer-menu)) .utility-bar .page-width {
-    padding-left: 5rem;
-    padding-right: 5rem;
+    padding-left: 40px;
+    padding-right: 40px;
   }
 
   .announcement-bar-slider {

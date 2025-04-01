@@ -143,51 +143,53 @@
               {%- when 'add_to_cart' -%}
                 <div class="add-to-cart__wrapper">
                   <form method="post" action="/cart/add">
-                    <input type="hidden" name="id" value="{{ product.selected_or_first_available_variant.id }}">
+                    <div class="add-to-cart_inner">
+                      <input type="hidden" name="id" value="{{ product.selected_or_first_available_variant.id }}">
 
-                    <!-- Quantity Selector Block -->
-                    <div
-                      id="Quantity-Form-{{ section.id }}"
-                      class="product-form__input product-form__quantity{% if settings.inputs_shadow_vertical_offset != 0 and settings.inputs_shadow_vertical_offset < 0 %} product-form__quantity-top{% endif %}"
-                      {{ block.shopify_attributes }}
-                    >
-                      <label class="quantity__label form__label" for="Quantity-{{ section.id }}">
-                        {{ 'products.product.quantity.label' | t }}
-                      </label>
-                      <div class="price-per-item__container">
-                        <quantity-input class="quantity" data-url="{{ product.url }}" data-section="{{ section.id }}">
-                          <button class="quantity__button" name="minus" type="button">
-                            <span class="svg-wrapper">
-                              {{- 'icon-minus.svg' | inline_asset_content -}}
-                            </span>
-                          </button>
-                          <input
-                            class="quantity__input"
-                            type="number"
-                            name="quantity"
-                            id="Quantity-{{ section.id }}"
-                            min="{{ product.selected_or_first_available_variant.quantity_rule.min }}"
-                            max="{{ product.selected_or_first_available_variant.quantity_rule.max }}"
-                            step="{{ product.selected_or_first_available_variant.quantity_rule.increment }}"
-                            value="{{ product.selected_or_first_available_variant.quantity_rule.min }}"
-                          >
-                          <button class="quantity__button" name="plus" type="button">
-                            <span class="svg-wrapper">
-                              {{- 'icon-plus.svg' | inline_asset_content -}}
-                            </span>
-                          </button>
-                        </quantity-input>
+                      <!-- Quantity Selector Block -->
+                      <div
+                        id="Quantity-Form-{{ section.id }}"
+                        class="product-form__input product-form__quantity{% if settings.inputs_shadow_vertical_offset != 0 and settings.inputs_shadow_vertical_offset < 0 %} product-form__quantity-top{% endif %}"
+                        {{ block.shopify_attributes }}
+                      >
+                        <label class="quantity__label form__label" for="Quantity-{{ section.id }}">
+                          {{ 'products.product.quantity.label' | t }}
+                        </label>
+                        <div class="price-per-item__container">
+                          <quantity-input class="quantity" data-url="{{ product.url }}" data-section="{{ section.id }}">
+                            <button class="quantity__button" name="minus" type="button">
+                              <span class="svg-wrapper">
+                                {{- 'icon-minus.svg' | inline_asset_content -}}
+                              </span>
+                            </button>
+                            <input
+                              class="quantity__input"
+                              type="number"
+                              name="quantity"
+                              id="Quantity-{{ section.id }}"
+                              min="{{ product.selected_or_first_available_variant.quantity_rule.min }}"
+                              max="{{ product.selected_or_first_available_variant.quantity_rule.max }}"
+                              step="{{ product.selected_or_first_available_variant.quantity_rule.increment }}"
+                              value="{{ product.selected_or_first_available_variant.quantity_rule.min }}"
+                            >
+                            <button class="quantity__button" name="plus" type="button">
+                              <span class="svg-wrapper">
+                                {{- 'icon-plus.svg' | inline_asset_content -}}
+                              </span>
+                            </button>
+                          </quantity-input>
+                        </div>
                       </div>
-                    </div>
 
-                    <!-- Buy Buttons Block -->
-                    {%- render 'buy-buttons',
-                      block: block,
-                      product: product,
-                      product_form_id: product_form_id,
-                      section_id: section.id,
-                      show_pickup_availability: true
-                    -%}
+                      <!-- Buy Buttons Block -->
+                      {%- render 'buy-buttons',
+                        block: block,
+                        product: product,
+                        product_form_id: product_form_id,
+                        section_id: section.id,
+                        show_pickup_availability: true
+                      -%}
+                    </div>
                   </form>
                 </div>
               {%- when 'inventory' -%}

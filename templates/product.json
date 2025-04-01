@@ -9,6 +9,12 @@
  */
 {
   "sections": {
+    "separator_DWqjKk": {
+      "type": "separator",
+      "settings": {
+        "show_separator": true
+      }
+    },
     "main": {
       "type": "main-product",
       "blocks": {
@@ -96,6 +102,13 @@
             "content": "<p>Learn How to Maintain and Preserve Your Purchases with Detailed Care Instructions.</p>",
             "page": ""
           }
+        },
+        "variant_picker_pEGteA": {
+          "type": "variant_picker",
+          "settings": {
+            "picker_type": "button",
+            "swatch_shape": "circle"
+          }
         }
       },
       "block_order": [
@@ -112,7 +125,8 @@
         "collapsible-row-0",
         "collapsible-row-1",
         "collapsible-row-2",
-        "collapsible-row-3"
+        "collapsible-row-3",
+        "variant_picker_pEGteA"
       ],
       "settings": {
         "enable_sticky_info": true,
@@ -224,12 +238,6 @@
         "subtitle": "Subscribe to our Newsletter",
         "rich_text": "<p>Subscribe to our Newsletter & get 25% off your first order.</p>",
         "button_text": "Subscribe"
-      }
-    },
-    "separator_DWqjKk": {
-      "type": "separator",
-      "settings": {
-        "show_separator": true
       }
     }
   },

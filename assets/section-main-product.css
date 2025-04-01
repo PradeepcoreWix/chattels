@@ -38,7 +38,7 @@ product-info {
   display: none;
 }
 
-.add-to-cart__wrapper .product-form {
+.product__info-container .add-to-cart__wrapper .product-form {
   margin: 0;
 }
 

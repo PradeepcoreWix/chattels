@@ -140,7 +140,7 @@
                     {{ form | payment_terms }}
                   {%- endform -%}
                 </div>
-
+              {%- when 'add_to_cart' -%}
                 <div class="add-to-cart__wrapper">
                   <form method="post" action="/cart/add">
                     <input type="hidden" name="id" value="{{ product.selected_or_first_available_variant.id }}">
@@ -604,6 +604,11 @@
     {
       "type": "price",
       "name": "t:sections.main-product.blocks.price.name",
+      "limit": 1
+    },
+    {
+      "type": "add_to_cart",
+      "name": "Add to Cart",
       "limit": 1
     },
     {

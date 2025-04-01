@@ -66,7 +66,7 @@
           "settings": {
             "heading": "Materials",
             "icon": "leather",
-            "content": "",
+            "content": "<p>Unlock the Potential of Your Space with High-Quality Furniture Materials.</p>",
             "page": ""
           }
         },
@@ -75,7 +75,7 @@
           "settings": {
             "heading": "Shipping & Returns",
             "icon": "truck",
-            "content": "",
+            "content": "<p>Shipping & Return Solutions for Seamless Customer Experience.</p>",
             "page": ""
           }
         },
@@ -84,7 +84,7 @@
           "settings": {
             "heading": "Dimensions",
             "icon": "ruler",
-            "content": "",
+            "content": "<p>Explore the Impact of Dimensions on Your Shopping Experience.</p>",
             "page": ""
           }
         },
@@ -93,7 +93,7 @@
           "settings": {
             "heading": "Care Instructions",
             "icon": "heart",
-            "content": "",
+            "content": "<p>Learn How to Maintain and Preserve Your Purchases with Detailed Care Instructions.</p>",
             "page": ""
           }
         }

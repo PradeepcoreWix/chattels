@@ -48,6 +48,13 @@
           "type": "rating",
           "settings": {}
         },
+        "variant_picker_pEGteA": {
+          "type": "variant_picker",
+          "settings": {
+            "picker_type": "button",
+            "swatch_shape": "square"
+          }
+        },
         "description": {
           "type": "description",
           "settings": {}
@@ -102,13 +109,6 @@
             "content": "<p>Learn How to Maintain and Preserve Your Purchases with Detailed Care Instructions.</p>",
             "page": ""
           }
-        },
-        "variant_picker_pEGteA": {
-          "type": "variant_picker",
-          "settings": {
-            "picker_type": "button",
-            "swatch_shape": "circle"
-          }
         }
       },
       "block_order": [
@@ -118,6 +118,7 @@
         "price",
         "judge_me_reviews_preview_badge_3cQ6hX",
         "rating_Aa9tg8",
+        "variant_picker_pEGteA",
         "description",
         "add_to_cart_EED8py",
         "quantity_selector",
@@ -125,8 +126,7 @@
         "collapsible-row-0",
         "collapsible-row-1",
         "collapsible-row-2",
-        "collapsible-row-3",
-        "variant_picker_pEGteA"
+        "collapsible-row-3"
       ],
       "settings": {
         "enable_sticky_info": true,

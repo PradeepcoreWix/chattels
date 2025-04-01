@@ -225,9 +225,16 @@
         "rich_text": "<p>Subscribe to our Newsletter & get 25% off your first order.</p>",
         "button_text": "Subscribe"
       }
+    },
+    "separator_DWqjKk": {
+      "type": "separator",
+      "settings": {
+        "show_separator": true
+      }
     }
   },
   "order": [
+    "separator_DWqjKk",
     "main",
     "related-products",
     "multicolumn",

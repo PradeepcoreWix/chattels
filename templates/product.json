@@ -162,6 +162,19 @@
         "padding_bottom": 28
       }
     },
+    "two_column_banner_qgcTim": {
+      "type": "two-column-banner",
+      "settings": {
+        "left_title": "Pieces to Keep Forever",
+        "left_text": "Thoughtfully designed jewelry to wear every day",
+        "left_link": "",
+        "left_button": "Learn More",
+        "right_title": "Latest Lookbook",
+        "right_text": "Our newest collection inspired by unique shapes",
+        "right_link": "",
+        "right_button": "Shop Now"
+      }
+    },
     "multicolumn": {
       "type": "multicolumn",
       "blocks": {
@@ -245,6 +258,7 @@
     "separator_DWqjKk",
     "main",
     "related-products",
+    "two_column_banner_qgcTim",
     "multicolumn",
     "separator_6rT6AD",
     "newsletter_with_text_BKD396"

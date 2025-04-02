@@ -79,13 +79,6 @@
               {%- endif -%}
             </div>
             <div class="banner__content collage-banner__content--{{ section.settings.desktop_content_position }}">
-              <div class="banner-text-block">
-                {% if block.settings.text != blank %}
-                  <div class="banner__text rte {{ block.settings.text_style }}" {{ block.shopify_attributes }}>
-                    <p>{{ block.settings.text }}</p>
-                  </div>
-                {% endif %}
-              </div>
               <div class="banner-heading-block">
                 {% if block.settings.heading != blank %}
                   <h2
@@ -95,6 +88,28 @@
                     {{ block.settings.heading }}
                   </h2>
                 {% endif %}
+              </div>
+              <div class="banner-text-block">
+                {% if block.settings.text != blank %}
+                  <div class="banner__text rte {{ block.settings.text_style }}" {{ block.shopify_attributes }}>
+                    <p>{{ block.settings.text }}</p>
+                  </div>
+                {% endif %}
+              </div>
+              <div class="btn-wrapper">
+                {%- if block.settings.button_label != blank -%}
+                  <a
+                    {% if block.settings.button_link == blank %}
+                      role="link" aria-disabled="true"
+                    {% else %}
+                      href="{{ block.settings.button_link }}"
+                    {% endif %}
+                    class="{% if block.settings.btn_style == 'link' %}link underlined-link{% elsif block.settings.btn_style == 'solid' %}button{% else %}button button--secondary{% endif %}"
+                    {{ block.shopify_attributes }}
+                  >
+                    {{ block.settings.button_label | escape }}
+                  </a>
+                {%- endif -%}
               </div>
             </div>
           </div>
@@ -283,7 +298,7 @@
               "label": "t:sections.all.heading_size.options__5.label"
             }
           ],
-          "default": "h1",
+          "default": "h2",
           "label": "t:sections.all.heading_size.label"
         },
         {
@@ -311,6 +326,38 @@
           ],
           "default": "body",
           "label": "t:sections.image-banner.blocks.text.settings.text_style.label"
+        },
+        {
+          "type": "text",
+          "id": "button_label",
+          "default": "t:sections.image-with-text.blocks.button.settings.button_label.default",
+          "label": "t:sections.image-with-text.blocks.button.settings.button_label.label",
+          "info": "t:sections.image-with-text.blocks.button.settings.button_label.info"
+        },
+        {
+          "type": "url",
+          "id": "button_link",
+          "label": "t:sections.image-with-text.blocks.button.settings.button_link.label"
+        },
+        {
+          "type": "select",
+          "id": "btn_style",
+          "label": "Button style",
+          "options": [
+            {
+              "value": "link",
+              "label": "t:sections.featured-collection.settings.view_all_style.options__1.label"
+            },
+            {
+              "value": "outline",
+              "label": "t:sections.featured-collection.settings.view_all_style.options__2.label"
+            },
+            {
+              "value": "solid",
+              "label": "t:sections.featured-collection.settings.view_all_style.options__3.label"
+            }
+          ],
+          "default": "link"
         }
       ]
     }

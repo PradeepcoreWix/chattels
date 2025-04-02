@@ -19,18 +19,18 @@
     overflow: hidden;
 }
 
-.hero-collage .banner__content {
+.two-column-banner .banner__content {
     position: absolute;
     top: 0;
     width: 100%;
     padding: 25px;
 }
 
-.hero-collage .banner__content .banner__heading {
+.two-column-banner .banner__content .banner__heading {
     margin: 0;
 }
 
-.hero-collage .banner__content {
+.two-column-banner .banner__content {
     position: absolute;
     top: 0;
     width: 100%;
@@ -42,21 +42,21 @@
     gap: 8px;
 }
 
-.hero-collage .collage {
-    grid-column-gap: 3px;
-    grid-row-gap: 3px;
+.two-column-banner .collage {
+    grid-column-gap: 24px;
+    grid-row-gap: 24px;
 }
 
-.hero-collage .banner__content .banner__heading {
+.two-column-banner .banner__content .banner__heading {
     margin: 0;
 }
 
-.hero-collage .banner__content .banner__heading,
-.hero-collage .banner__text p {
+.two-column-banner .banner__content .banner__heading,
+.two-column-banner .banner__text p {
     color: #fff;
 }
 
-.hero-collage .banner__content:after {
+.two-column-banner .banner__content:after {
     position: absolute;
     content: '';
     inset: 0;
@@ -67,13 +67,13 @@
     z-index: 0;
 }
 
-.hero-collage .banner-text-block,
-.hero-collage .banner-heading-block {
+.two-column-banner .banner-text-block,
+.two-column-banner .banner-heading-block {
     position: relative;
     z-index: 1;
 }
 
-.hero-collage .banner__content .banner__heading {
+.two-column-banner .banner__content .banner__heading {
     max-width: 330px;
 }
 

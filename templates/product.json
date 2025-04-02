@@ -164,15 +164,38 @@
     },
     "two_column_banner_qgcTim": {
       "type": "two-column-banner",
+      "blocks": {
+        "image_GTKgAg": {
+          "type": "image",
+          "settings": {
+            "heading": "Image banner",
+            "heading_size": "h1",
+            "text": "Give customers details about the banner image(s) or content on the template.",
+            "text_style": "body"
+          }
+        },
+        "image_LeWT8z": {
+          "type": "image",
+          "settings": {
+            "heading": "Image banner",
+            "heading_size": "h1",
+            "text": "Give customers details about the banner image(s) or content on the template.",
+            "text_style": "body"
+          }
+        }
+      },
+      "block_order": [
+        "image_GTKgAg",
+        "image_LeWT8z"
+      ],
       "settings": {
-        "left_title": "Pieces to Keep Forever",
-        "left_text": "Thoughtfully designed jewelry to wear every day",
-        "left_link": "",
-        "left_button": "Learn More",
-        "right_title": "Latest Lookbook",
-        "right_text": "Our newest collection inspired by unique shapes",
-        "right_link": "",
-        "right_button": "Shop Now"
+        "desktop_layout": "left",
+        "mobile_layout": "column",
+        "desktop_content_position": "middle-center",
+        "card_styles": "product-card-wrapper",
+        "color_scheme": "",
+        "padding_top": 36,
+        "padding_bottom": 36
       }
     },
     "multicolumn": {

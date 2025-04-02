@@ -170,7 +170,7 @@
           "settings": {
             "image": "shopify://shop_images/image-12.jpg",
             "heading": "Image banner",
-            "heading_size": "h2",
+            "heading_size": "h1",
             "text": "Give customers details about the banner image(s) or content on the template.",
             "text_style": "body",
             "button_label": "Button label",
@@ -183,7 +183,7 @@
           "settings": {
             "image": "shopify://shop_images/image-13.jpg",
             "heading": "Image banner",
-            "heading_size": "h2",
+            "heading_size": "h1",
             "text": "Give customers details about the banner image(s) or content on the template.",
             "text_style": "body",
             "button_label": "Button label",

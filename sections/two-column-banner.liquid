@@ -1,0 +1,128 @@
+<style>
+  .two-column-section {
+    display: flex;
+    gap: 10px;
+  }
+  .column {
+    width: 50%;
+    height: 400px;
+    background-size: cover;
+    background-position: center;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+  }
+  .overlay {
+    text-align: center;
+    color: white;
+    background: rgba(0, 0, 0, 0.4);
+    padding: 20px;
+  }
+  h2 {
+    font-size: 24px;
+    margin-bottom: 10px;
+  }
+  p {
+    font-size: 16px;
+    margin-bottom: 10px;
+  }
+  .btn {
+    color: white;
+    text-decoration: none;
+    border: 1px solid white;
+    padding: 8px 16px;
+    display: inline-block;
+  }
+  .btn:hover {
+    background: white;
+    color: black;
+  }
+</style>
+
+<div class="two-column-section">
+  <div class="column" style="background-image: url('{{ section.settings.left_image | img_url: '1500x' }}');">
+    <div class="overlay">
+      <h2>{{ section.settings.left_title }}</h2>
+      <p>{{ section.settings.left_text }}</p>
+      <a href="{{ section.settings.left_link }}" class="btn">{{ section.settings.left_button }}</a>
+    </div>
+  </div>
+
+  <div class="column" style="background-image: url('{{ section.settings.right_image | img_url: '1500x' }}');">
+    <div class="overlay">
+      <h2>{{ section.settings.right_title }}</h2>
+      <p>{{ section.settings.right_text }}</p>
+      <a href="{{ section.settings.right_link }}" class="btn">{{ section.settings.right_button }}</a>
+    </div>
+  </div>
+</div>
+
+{% schema %}
+{
+  "name": "Two Column Banner",
+  "settings": [
+    {
+      "type": "image_picker",
+      "id": "left_image",
+      "label": "Left Column Image"
+    },
+    {
+      "type": "text",
+      "id": "left_title",
+      "label": "Left Title",
+      "default": "Pieces to Keep Forever"
+    },
+    {
+      "type": "textarea",
+      "id": "left_text",
+      "label": "Left Description",
+      "default": "Thoughtfully designed jewelry to wear every day"
+    },
+    {
+      "type": "url",
+      "id": "left_link",
+      "label": "Left Button Link"
+    },
+    {
+      "type": "text",
+      "id": "left_button",
+      "label": "Left Button Text",
+      "default": "Learn More"
+    },
+    {
+      "type": "image_picker",
+      "id": "right_image",
+      "label": "Right Column Image"
+    },
+    {
+      "type": "text",
+      "id": "right_title",
+      "label": "Right Title",
+      "default": "Latest Lookbook"
+    },
+    {
+      "type": "textarea",
+      "id": "right_text",
+      "label": "Right Description",
+      "default": "Our newest collection inspired by unique shapes"
+    },
+    {
+      "type": "url",
+      "id": "right_link",
+      "label": "Right Button Link"
+    },
+    {
+      "type": "text",
+      "id": "right_button",
+      "label": "Right Button Text",
+      "default": "Shop Now"
+    }
+  ],
+  "presets": [
+    {
+      "name": "Two Column Banner"
+    }
+  ]
+}
+{% endschema %}

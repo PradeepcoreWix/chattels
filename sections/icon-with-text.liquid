@@ -74,7 +74,7 @@
               {%- if block.settings.image != blank -%}
                 <div class="icon-with-text-card__image-wrapper icon-with-text-card__image-wrapper--{{ section.settings.image_width }}-width{% if section.settings.image_width != 'full' or spaced_image %} icon-with-text-card-spacing{% endif %}">
                   <div
-                    class="media media--transparent"
+                    class="icon"
                   >
                     {%- liquid
                       assign number_of_columns = section.settings.columns_desktop

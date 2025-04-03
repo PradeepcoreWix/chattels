@@ -35,11 +35,6 @@
         <h2 class="title inline-richtext {{ section.settings.heading_size }}">
           {{ section.settings.title }}
         </h2>
-        {%- if section.settings.button_label != blank and show_mobile_slider -%}
-          <a href="{{ section.settings.button_link }}" class="link underlined-link large-up-hide">
-            {{- section.settings.button_label | escape -}}
-          </a>
-        {%- endif -%}
       </div>
     {%- endunless -%}
     <slider-component class="slider-mobile-gutter">
@@ -77,15 +72,9 @@
           >
             <div class="icon-with-text-card content-container">
               {%- if block.settings.image != blank -%}
-                {% if section.settings.image_ratio == 'adapt' or section.settings.image_ratio == 'circle' %}
-                  {% assign spaced_image = true %}
-                {% endif %}
                 <div class="icon-with-text-card__image-wrapper icon-with-text-card__image-wrapper--{{ section.settings.image_width }}-width{% if section.settings.image_width != 'full' or spaced_image %} icon-with-text-card-spacing{% endif %}">
                   <div
-                    class="media media--transparent media--{{ section.settings.image_ratio }}"
-                    {% if section.settings.image_ratio == 'adapt' %}
-                      style="padding-bottom: {{ 1 | divided_by: highest_ratio | times: 100 }}%;"
-                    {% endif %}
+                    class="media media--transparent"
                   >
                     {%- liquid
                       assign number_of_columns = section.settings.columns_desktop
@@ -173,20 +162,6 @@
         </div>
       {%- endif -%}
     </slider-component>
-    <div class="center{% if show_mobile_slider %} small-hide medium-hide{% endif %}">
-      {%- if section.settings.button_label != blank -%}
-        <a
-          class="button button--primary"
-          {% if section.settings.button_link == blank %}
-            role="link" aria-disabled="true"
-          {% else %}
-            href="{{ section.settings.button_link }}"
-          {% endif %}
-        >
-          {{ section.settings.button_label | escape }}
-        </a>
-      {%- endif -%}
-    </div>
   </div>
 </div>
 
@@ -202,7 +177,6 @@
     {
       "type": "inline_richtext",
       "id": "title",
-      "default": "t:sections.multicolumn.settings.title.default",
       "label": "t:sections.multicolumn.settings.title.label"
     },
     {
@@ -230,7 +204,7 @@
           "label": "t:sections.all.heading_size.options__5.label"
         }
       ],
-      "default": "h1",
+      "default": "h2",
       "label": "t:sections.all.heading_size.label"
     },
     {
@@ -238,64 +212,8 @@
       "content": "t:sections.multicolumn.settings.header_image.content"
     },
     {
-      "type": "select",
-      "id": "image_width",
-      "options": [
-        {
-          "value": "third",
-          "label": "t:sections.multicolumn.settings.image_width.options__1.label"
-        },
-        {
-          "value": "half",
-          "label": "t:sections.multicolumn.settings.image_width.options__2.label"
-        },
-        {
-          "value": "full",
-          "label": "t:sections.multicolumn.settings.image_width.options__3.label"
-        }
-      ],
-      "default": "full",
-      "label": "t:sections.multicolumn.settings.image_width.label"
-    },
-    {
-      "type": "select",
-      "id": "image_ratio",
-      "options": [
-        {
-          "value": "adapt",
-          "label": "t:sections.multicolumn.settings.image_ratio.options__1.label"
-        },
-        {
-          "value": "portrait",
-          "label": "t:sections.multicolumn.settings.image_ratio.options__2.label"
-        },
-        {
-          "value": "square",
-          "label": "t:sections.multicolumn.settings.image_ratio.options__3.label"
-        },
-        {
-          "value": "circle",
-          "label": "t:sections.multicolumn.settings.image_ratio.options__4.label"
-        }
-      ],
-      "default": "adapt",
-      "label": "t:sections.multicolumn.settings.image_ratio.label"
-    },
-    {
       "type": "header",
       "content": "t:sections.multicolumn.settings.header_button.content"
-    },
-    {
-      "type": "text",
-      "id": "button_label",
-      "default": "t:sections.multicolumn.settings.button_label.default",
-      "label": "t:sections.multicolumn.settings.button_label.label",
-      "info": "t:sections.multicolumn.settings.button_label.info"
-    },
-    {
-      "type": "url",
-      "id": "button_link",
-      "label": "t:sections.multicolumn.settings.button_link.label"
     },
     {
       "type": "header",

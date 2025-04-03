@@ -285,8 +285,9 @@
         "column_AimjiC": {
           "type": "column",
           "settings": {
-            "title": "Column",
-            "text": "<p>Pair text with an image to focus on your chosen product, collection, or blog post. Add details on availability, style, or even provide a review.</p>",
+            "image": "shopify://shop_images/return.png",
+            "title": "30-Days Free Returns",
+            "text": "<p>Enjoy the freedom of stress-free shopping with our hassle-free and complimentary return policy.</p>",
             "link_label": "",
             "link": ""
           }
@@ -294,8 +295,9 @@
         "column_hADp7D": {
           "type": "column",
           "settings": {
-            "title": "Column",
-            "text": "<p>Pair text with an image to focus on your chosen product, collection, or blog post. Add details on availability, style, or even provide a review.</p>",
+            "image": "shopify://shop_images/world.png",
+            "title": "Worldwide Shipping",
+            "text": "<p>Experience global fashion at your doorstep with our reliable worldwide shipping services.</p>",
             "link_label": "",
             "link": ""
           }
@@ -303,8 +305,19 @@
         "column_JDmD6D": {
           "type": "column",
           "settings": {
-            "title": "Column",
-            "text": "<p>Pair text with an image to focus on your chosen product, collection, or blog post. Add details on availability, style, or even provide a review.</p>",
+            "image": "shopify://shop_images/brend.png",
+            "title": "100% Original Brends",
+            "text": "<p>Discover authenticity at its finest with our exclusive collection of 100% original branded fashion</p>",
+            "link_label": "",
+            "link": ""
+          }
+        },
+        "column_4HjXRt": {
+          "type": "column",
+          "settings": {
+            "image": "shopify://shop_images/secure.png",
+            "title": "Secure Payment",
+            "text": "<p>Shop with confidence knowing your payments are secure and your information is safeguarded</p>",
             "link_label": "",
             "link": ""
           }
@@ -313,12 +326,13 @@
       "block_order": [
         "column_AimjiC",
         "column_hADp7D",
-        "column_JDmD6D"
+        "column_JDmD6D",
+        "column_4HjXRt"
       ],
       "settings": {
         "title": "",
         "heading_size": "h2",
-        "columns_desktop": 3,
+        "columns_desktop": 4,
         "column_alignment": "left",
         "background_style": "primary",
         "color_scheme": "",

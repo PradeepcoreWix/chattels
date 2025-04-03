@@ -86,6 +86,10 @@
     color: rgb(223 223 223);
 }
 
+.two-column-banner .banner-text-block {
+    margin-block: 6px;
+}
+
 @media screen and (max-width: 749px) {
     .collage {
         grid-column-gap: var(--grid-mobile-horizontal-spacing);

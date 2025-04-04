@@ -9,6 +9,53 @@
  */
 {
   "sections": {
+    "image_banner_VfH7cj": {
+      "type": "image-banner",
+      "blocks": {
+        "heading_XxKhiy": {
+          "type": "heading",
+          "settings": {
+            "heading": "Image banner",
+            "heading_size": "h1"
+          }
+        },
+        "text_HACHiA": {
+          "type": "text",
+          "settings": {
+            "text": "Give customers details about the banner image(s) or content on the template.",
+            "text_style": "body"
+          }
+        },
+        "buttons_HxpHbf": {
+          "type": "buttons",
+          "settings": {
+            "button_label_1": "Button label",
+            "button_link_1": "",
+            "button_style_secondary_1": false,
+            "button_label_2": "Button label",
+            "button_link_2": "",
+            "button_style_secondary_2": false
+          }
+        }
+      },
+      "block_order": [
+        "heading_XxKhiy",
+        "text_HACHiA",
+        "buttons_HxpHbf"
+      ],
+      "settings": {
+        "image_overlay_opacity": 0,
+        "image_height": "medium",
+        "image_behavior": "none",
+        "desktop_content_position": "middle-center",
+        "desktop_content_alignment": "center",
+        "show_text_box": true,
+        "color_scheme": "",
+        "stack_images_on_mobile": true,
+        "mobile_content_alignment": "center",
+        "show_text_below": true
+      }
+    },
     "banner": {
       "type": "main-collection-banner",
       "settings": {
@@ -36,10 +83,21 @@
         "padding_top": 36,
         "padding_bottom": 36
       }
+    },
+    "newsletter_with_text_UG4qLN": {
+      "type": "newsletter-with-text",
+      "settings": {
+        "background_image": "shopify://shop_images/image_06c3e34c-6eeb-44d9-8ac5-d94047b3bc75.jpg",
+        "subtitle": "Subscribe to our Newsletter",
+        "rich_text": "<p>Subscribe to our Newsletter & get 25% off your first order.</p>",
+        "button_text": "Subscribe"
+      }
     }
   },
   "order": [
+    "image_banner_VfH7cj",
     "banner",
-    "product-grid"
+    "product-grid",
+    "newsletter_with_text_UG4qLN"
   ]
 }

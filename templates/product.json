@@ -207,36 +207,27 @@
         "collapsible_row_gqakB4": {
           "type": "collapsible_row",
           "settings": {
-            "heading": "Collapsible row",
-            "icon": "check_mark",
-            "row_content": "",
+            "heading": "How long will it take for my order to arrive?",
+            "icon": "none",
+            "row_content": "<p>Our standard shipping time for orders is between 3-5 business days. However, delivery times can vary based on the shipping method selected at checkout and your location. Please note that during peak periods and holidays, shipping times might be extended. You can always track your order by logging into your account and clicking on the \"Order History\" section.</p>",
             "page": ""
           }
         },
         "collapsible_row_GDwxWY": {
           "type": "collapsible_row",
           "settings": {
-            "heading": "Collapsible row",
-            "icon": "check_mark",
-            "row_content": "",
+            "heading": "What is your return policy?",
+            "icon": "none",
+            "row_content": "<p>Our standard shipping time for orders is between 3-5 business days. However, delivery times can vary based on the shipping method selected at checkout and your location. Please note that during peak periods and holidays, shipping times might be extended. You can always track your order by logging into your account and clicking on the \"Order History\" section.</p>",
             "page": ""
           }
         },
         "collapsible_row_acLgFx": {
           "type": "collapsible_row",
           "settings": {
-            "heading": "Collapsible row",
-            "icon": "check_mark",
-            "row_content": "",
-            "page": ""
-          }
-        },
-        "collapsible_row_6eciab": {
-          "type": "collapsible_row",
-          "settings": {
-            "heading": "Collapsible row",
-            "icon": "check_mark",
-            "row_content": "",
+            "heading": "Is my personal and payment information secure when shopping on your site?",
+            "icon": "none",
+            "row_content": "<p>Our standard shipping time for orders is between 3-5 business days. However, delivery times can vary based on the shipping method selected at checkout and your location. Please note that during peak periods and holidays, shipping times might be extended. You can always track your order by logging into your account and clicking on the \"Order History\" section.</p>",
             "page": ""
           }
         }
@@ -244,8 +235,7 @@
       "block_order": [
         "collapsible_row_gqakB4",
         "collapsible_row_GDwxWY",
-        "collapsible_row_acLgFx",
-        "collapsible_row_6eciab"
+        "collapsible_row_acLgFx"
       ],
       "settings": {
         "caption": "",
@@ -255,7 +245,7 @@
         "layout": "none",
         "container_color_scheme": "",
         "color_scheme": "",
-        "open_first_collapsible_row": false,
+        "open_first_collapsible_row": true,
         "image_ratio": "adapt",
         "desktop_layout": "image_second",
         "padding_top": 36,

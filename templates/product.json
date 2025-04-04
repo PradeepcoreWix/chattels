@@ -40,10 +40,6 @@
           "type": "price",
           "settings": {}
         },
-        "judge_me_reviews_preview_badge_3cQ6hX": {
-          "type": "shopify://apps/judge-me-reviews/blocks/preview_badge/61ccd3b1-a9f2-4160-9fe9-4fec8413e5d8",
-          "settings": {}
-        },
         "rating_Aa9tg8": {
           "type": "rating",
           "settings": {}
@@ -116,7 +112,6 @@
         "title",
         "caption",
         "price",
-        "judge_me_reviews_preview_badge_3cQ6hX",
         "rating_Aa9tg8",
         "variant_picker_pEGteA",
         "description",
@@ -206,6 +201,67 @@
         "padding_bottom": 36
       }
     },
+    "collapsible_content_FMtXPV": {
+      "type": "collapsible-content",
+      "blocks": {
+        "collapsible_row_gqakB4": {
+          "type": "collapsible_row",
+          "settings": {
+            "heading": "Collapsible row",
+            "icon": "check_mark",
+            "row_content": "",
+            "page": ""
+          }
+        },
+        "collapsible_row_GDwxWY": {
+          "type": "collapsible_row",
+          "settings": {
+            "heading": "Collapsible row",
+            "icon": "check_mark",
+            "row_content": "",
+            "page": ""
+          }
+        },
+        "collapsible_row_acLgFx": {
+          "type": "collapsible_row",
+          "settings": {
+            "heading": "Collapsible row",
+            "icon": "check_mark",
+            "row_content": "",
+            "page": ""
+          }
+        },
+        "collapsible_row_6eciab": {
+          "type": "collapsible_row",
+          "settings": {
+            "heading": "Collapsible row",
+            "icon": "check_mark",
+            "row_content": "",
+            "page": ""
+          }
+        }
+      },
+      "block_order": [
+        "collapsible_row_gqakB4",
+        "collapsible_row_GDwxWY",
+        "collapsible_row_acLgFx",
+        "collapsible_row_6eciab"
+      ],
+      "settings": {
+        "caption": "",
+        "heading": "Collapsible content",
+        "heading_size": "h1",
+        "heading_alignment": "left",
+        "layout": "none",
+        "container_color_scheme": "",
+        "color_scheme": "",
+        "open_first_collapsible_row": false,
+        "image_ratio": "adapt",
+        "desktop_layout": "image_second",
+        "padding_top": 36,
+        "padding_bottom": 36
+      }
+    },
     "separator_6rT6AD": {
       "type": "separator",
       "settings": {
@@ -290,6 +346,7 @@
     "main",
     "related-products",
     "two_column_banner_qgcTim",
+    "collapsible_content_FMtXPV",
     "separator_6rT6AD",
     "icon_with_text_JWC9Ki",
     "newsletter_with_text_BKD396"

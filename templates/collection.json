@@ -24,6 +24,7 @@
         "heading_HTBeQg"
       ],
       "settings": {
+        "image": "shopify://shop_images/image-13.jpg",
         "image_overlay_opacity": 10,
         "image_height": "small",
         "image_behavior": "none",

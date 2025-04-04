@@ -9,59 +9,31 @@
  */
 {
   "sections": {
-    "image_banner_VfH7cj": {
-      "type": "image-banner",
+    "collection_banner_ftX4FE": {
+      "type": "collection-banner",
       "blocks": {
-        "heading_XxKhiy": {
+        "heading_HTBeQg": {
           "type": "heading",
           "settings": {
             "heading": "Image banner",
             "heading_size": "h1"
           }
-        },
-        "text_HACHiA": {
-          "type": "text",
-          "settings": {
-            "text": "Give customers details about the banner image(s) or content on the template.",
-            "text_style": "body"
-          }
-        },
-        "buttons_HxpHbf": {
-          "type": "buttons",
-          "settings": {
-            "button_label_1": "Button label",
-            "button_link_1": "",
-            "button_style_secondary_1": false,
-            "button_label_2": "Button label",
-            "button_link_2": "",
-            "button_style_secondary_2": false
-          }
         }
       },
       "block_order": [
-        "heading_XxKhiy",
-        "text_HACHiA",
-        "buttons_HxpHbf"
+        "heading_HTBeQg"
       ],
       "settings": {
-        "image_overlay_opacity": 0,
-        "image_height": "medium",
+        "image_overlay_opacity": 10,
+        "image_height": "small",
         "image_behavior": "none",
-        "desktop_content_position": "middle-center",
-        "desktop_content_alignment": "center",
-        "show_text_box": true,
+        "desktop_content_position": "bottom-left",
+        "desktop_content_alignment": "left",
+        "show_text_box": false,
         "color_scheme": "",
         "stack_images_on_mobile": true,
-        "mobile_content_alignment": "center",
-        "show_text_below": true
-      }
-    },
-    "banner": {
-      "type": "main-collection-banner",
-      "settings": {
-        "show_collection_description": true,
-        "show_collection_image": false,
-        "color_scheme": "scheme-1"
+        "mobile_content_alignment": "left",
+        "show_text_below": false
       }
     },
     "product-grid": {
@@ -95,8 +67,7 @@
     }
   },
   "order": [
-    "image_banner_VfH7cj",
-    "banner",
+    "collection_banner_ftX4FE",
     "product-grid",
     "newsletter_with_text_UG4qLN"
   ]

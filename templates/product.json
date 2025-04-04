@@ -29,12 +29,6 @@
           "type": "title",
           "settings": {}
         },
-        "sku_KamCRe": {
-          "type": "sku",
-          "settings": {
-            "text_style": "body"
-          }
-        },
         "price": {
           "type": "price",
           "settings": {}
@@ -42,6 +36,14 @@
         "rating_Aa9tg8": {
           "type": "rating",
           "settings": {}
+        },
+        "inventory_8EGqCy": {
+          "type": "inventory",
+          "settings": {
+            "text_style": "body",
+            "inventory_threshold": 10,
+            "show_inventory_quantity": true
+          }
         },
         "variant_picker_pEGteA": {
           "type": "variant_picker",
@@ -98,9 +100,9 @@
       "block_order": [
         "vendor",
         "title",
-        "sku_KamCRe",
         "price",
         "rating_Aa9tg8",
+        "inventory_8EGqCy",
         "variant_picker_pEGteA",
         "description",
         "add_to_cart_EED8py",

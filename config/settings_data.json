@@ -103,7 +103,7 @@
     "badge_position": "top left",
     "badge_corner_radius": 0,
     "sale_badge_color_scheme": "scheme-5",
-    "sold_out_badge_color_scheme": "scheme-3",
+    "sold_out_badge_color_scheme": "scheme-709c109f-0e85-48a4-a61c-faba8ed145a8",
     "social_facebook_link": "#",
     "social_instagram_link": "#",
     "social_youtube_link": "",
@@ -190,6 +190,17 @@
           "button_label": "#334fb4",
           "secondary_button_label": "#ffffff",
           "shadow": "#121212"
+        }
+      },
+      "scheme-709c109f-0e85-48a4-a61c-faba8ed145a8": {
+        "settings": {
+          "background": "#ff0000",
+          "background_gradient": "",
+          "text": "#ffffff",
+          "button": "#ff0000",
+          "button_label": "#ffffff",
+          "secondary_button_label": "#ff0000",
+          "shadow": "#ff0000"
         }
       }
     }

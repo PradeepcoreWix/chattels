@@ -29,13 +29,6 @@
           "type": "title",
           "settings": {}
         },
-        "caption": {
-          "type": "text",
-          "settings": {
-            "text": "{{ product.metafields.descriptors.subtitle.value }}",
-            "text_style": "subtitle"
-          }
-        },
         "price": {
           "type": "price",
           "settings": {}
@@ -55,27 +48,22 @@
           "type": "description",
           "settings": {}
         },
+        "sku_KamCRe": {
+          "type": "sku",
+          "settings": {
+            "text_style": "body"
+          }
+        },
         "add_to_cart_EED8py": {
           "type": "add_to_cart",
           "settings": {}
-        },
-        "quantity_selector": {
-          "type": "quantity_selector",
-          "settings": {}
-        },
-        "buy_buttons": {
-          "type": "buy_buttons",
-          "settings": {
-            "show_dynamic_checkout": true,
-            "show_gift_card_recipient": true
-          }
         },
         "collapsible-row-0": {
           "type": "collapsible_tab",
           "settings": {
             "heading": "Materials",
             "icon": "leather",
-            "content": "<p>Unlock the Potential of Your Space with High-Quality Furniture Materials.</p>",
+            "content": "<p>Crafted from high-quality 14k gold vermeil and ethically sourced gemstones, our pieces are designed for durability and timeless elegance. Each item is hypoallergenic, nickel-free, and made to last a lifetime with proper care.<br/></p>",
             "page": ""
           }
         },
@@ -84,7 +72,7 @@
           "settings": {
             "heading": "Shipping & Returns",
             "icon": "truck",
-            "content": "<p>Shipping & Return Solutions for Seamless Customer Experience.</p>",
+            "content": "<p><strong>Shipping: </strong><br/>We offer free standard shipping on all orders over $75. Express shipping options are available at checkout.<br/><br/><strong>Returns:</strong><br/>We accept returns within 30 days of purchase. Items must be unworn and in original packaging. Visit our [Returns Portal](#) to start a return.<br/><br/></p>",
             "page": ""
           }
         },
@@ -93,7 +81,7 @@
           "settings": {
             "heading": "Dimensions",
             "icon": "ruler",
-            "content": "<p>Explore the Impact of Dimensions on Your Shopping Experience.</p>",
+            "content": "<p>- Ring Band Width: 2mm  <br/>- Pendant Size: 12mm diameter  <br/>- Chain Length: Adjustable from 16\" to 18\"  <br/>- Earring Drop:22mm </p><p><strong> Note:</strong> Each piece is handmade. Slight variations in size may occur.<br/></p>",
             "page": ""
           }
         },
@@ -102,7 +90,7 @@
           "settings": {
             "heading": "Care Instructions",
             "icon": "heart",
-            "content": "<p>Learn How to Maintain and Preserve Your Purchases with Detailed Care Instructions.</p>",
+            "content": "<p>To preserve the beauty of your jewelry:<br/>- Avoid contact with water, perfumes, lotions, and household chemicals.<br/>- Store in a dry place, preferably in a soft pouch or box.<br/>- Clean gently using a soft cloth—no polishing agents required.<br/>- Remove jewelry before swimming, showering, or exercising.<br/><br/>With proper care, your pieces will shine for years to come.<br/></p>",
             "page": ""
           }
         }
@@ -110,14 +98,12 @@
       "block_order": [
         "vendor",
         "title",
-        "caption",
         "price",
         "rating_Aa9tg8",
         "variant_picker_pEGteA",
         "description",
+        "sku_KamCRe",
         "add_to_cart_EED8py",
-        "quantity_selector",
-        "buy_buttons",
         "collapsible-row-0",
         "collapsible-row-1",
         "collapsible-row-2",

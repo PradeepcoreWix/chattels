@@ -249,7 +249,7 @@
         "image_ratio": "adapt",
         "desktop_layout": "image_second",
         "padding_top": 28,
-        "padding_bottom": 56
+        "padding_bottom": 52
       }
     },
     "separator_6rT6AD": {
@@ -319,7 +319,7 @@
         "columns_mobile": "1",
         "swipe_on_mobile": true,
         "padding_top": 8,
-        "padding_bottom": 64
+        "padding_bottom": 60
       }
     },
     "newsletter_with_text_BKD396": {
